@@ -13,3 +13,9 @@ vue  vuex  vue-router axios
 推荐使用微信二维码查看
 
 ![@溯源码 | left | 290x0 ](./src/assets/image/code.png)
+
+### 分支
+> master 主分支
+> test   测试分支
+
+测试数据 query?random_code=0466&rule_code=1572451872108854520181120125735075&qcode=0000002
