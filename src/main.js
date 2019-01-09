@@ -3,19 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import store from './store'
+import FastClick from 'fastclick'
 import './assets/styles/reset.css'
 import './assets/styles/border.css'
-import global from './components/tool'
+import './assets/styles/iconfont/iconfont.css'
 
-Vue.prototype.global = global
+FastClick.attach(document.body)
 Vue.config.productionTip = false
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  store,
   components: { App },
   template: '<App/>'
 })

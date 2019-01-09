@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-// import location from '@/page/location'
+import location from '@/page/location'
 import home from '@/page/home'
-import check from '@/page/check'
-import record from '@/page/record'
+import enterprise from '@/page/enterprise'
+import scenery from '@/page/scenery'
+import tourism from '@/page/tourism'
 
 Vue.use(Router)
 
@@ -12,21 +13,33 @@ const router = new Router({
   routes: [
     {
       path: '/',
+      name: 'location',
+      component: location,
+      meta: { title: '获取位置' }
+    },
+    {
+      path: '/home',
       name: 'home',
       component: home,
-      meta: { title: '全程追溯信息' }
+      meta: { title: '扶贫产品' }
     },
     {
-      path: '/check',
-      name: 'check',
-      component: check,
-      meta: { title: '检测报告' }
+      path: '/enterprise',
+      name: 'enterprise',
+      component: enterprise,
+      meta: { title: '生产企业' }
     },
     {
-      path: '/record',
-      name: 'record',
-      component: record,
-      meta: { title: '生产日志' }
+      path: '/scenery',
+      name: 'scenery',
+      component: scenery,
+      meta: { title: '扶贫简介' }
+    },
+    {
+      path: '/tourism',
+      name: 'tourism',
+      component: tourism,
+      meta: { title: '旅游资源' }
     }
   ]
 })

@@ -1,21 +1,21 @@
-# 产品溯源系统
+# retrospect
 
-### 描述
+> A Vue.js project
 
-用户通过二维码扫描追溯到产品信息，产地信息，生产日志，检测报告。
+## Build Setup
 
-### 技术栈
+``` bash
+# install dependencies
+npm install
 
-vue  vuex  vue-router axios
+# serve with hot reload at localhost:8080
+npm run dev
 
-### 溯源码
+# build for production with minification
+npm run build
 
-推荐使用微信二维码查看
+# build for production and view the bundle analyzer report
+npm run build --report
+```
 
-![@溯源码 | left | 290x0 ](./src/assets/image/code.png)
-
-### 分支
-> master 主分支
-> test   测试分支
-
-测试数据 query?random_code=0466&rule_code=1572451872108854520181120125735075&qcode=0000002
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

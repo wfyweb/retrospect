@@ -1,4 +1,5 @@
 <template>
+  <!-- 表格组件 -->
   <div class='grid-wrap border-radius' >
       <div class='grid-title' v-if="title">
         {{title}}
@@ -9,8 +10,14 @@
               <div class='des' >{{item.val}}</div>
             </li>
         </ul>
+        <!-- <ul class='grid-list' v-for=" (listVal,listIndex) in listData" :key="listIndex">
+            <li v-for=' (item,index) in dataKey' :key='index'>
+              <div class='info' >{{item}}</div>
+              <div class='des' >{{listVal[index]}}</div>
+            </li>
+        </ul> -->
       <div class="map" v-if="isMap">
-          <map-grid :lng = lng :lat = lat></map-grid>
+          <map-grid></map-grid>
       </div>
 
   </div>
@@ -20,7 +27,7 @@
 import mapGrid from './mapGrid'
 export default {
   name: 'grid',
-  props: ['dataList', 'title', 'isMap', 'lng', 'lat'],
+  props: ['dataList', 'title', 'isMap'],
   components: {
     mapGrid
   },
@@ -92,7 +99,7 @@ export default {
     }
     .map{
       width: 100%;
-      height: 2.25rem;
+      height: 225px;
       background: #f9f9f9;
     }
 </style>

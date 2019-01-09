@@ -1,4 +1,5 @@
 <template>
+  <!-- 加载等待组件 -->
   <div class="microPageLoading" >
     <div class="spinner">
         <div class="rect rect1"></div>
