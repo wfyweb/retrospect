@@ -6,16 +6,18 @@
 export default {
   name: 'mapGrid',
   props: ['lng', 'lat'],
+  mounted () {
+    this.ready()
+  },
   methods: {
     ready () {
-      /* eslint-disable */
-      // 百度地图API功能
+      // 通过经纬度显示地图
       var map = new BMap.Map('allmap')
       var localSearch = new BMap.LocalSearch(map)
-      var point = new BMap.Point(this.lng, this.lat)
       // 创建点坐标
-      map.centerAndZoom(point, 12)
+      var point = new BMap.Point(this.lng, this.lat)
       // 初始化地图， 设置中心点坐标和地图级别
+      map.centerAndZoom(point, 12)
       var marker = new BMap.Marker(point)
       map.addOverlay(marker)
     }
